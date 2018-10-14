@@ -102,6 +102,7 @@ body {
 .card__wrapper {
     display: flex;
     padding: 60px;
+    text-align: center;
 }
 .card {
     width: 400px;
@@ -116,9 +117,6 @@ body {
 }
 .card__content {
     padding: 0 20px 20px;
-}
-.card__content h,p {
-    text-align: left;
 }
 .card__left {
     margin: 0 60px;
