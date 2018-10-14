@@ -39,6 +39,16 @@
 }
 
 /* home.html */
+.header__content {
+    display: flex;
+    padding: 30px 60px;
+}
+/* .first__wrapper {
+    float: left;
+}
+.second__wrapper {
+    float: right;
+} */
 .header__logo {
     width: 300px;
     height: 50px;
@@ -66,9 +76,6 @@
 body {
     background-color: rgb(153, 158, 158);
 } 
-.home__header {
-    display: flex;
-}
 .nav__leftheader {
     display: inline;
     float: left;
@@ -83,4 +90,53 @@ body {
     color: black !important;
     padding: 20px 60px;
 }
+.main__wrapper {
+    padding: 0 60px 60px;
+}
+.text__link {
+    text-decoration: none;
+}
+.welcome__text {
+    letter-spacing: 2px;
+}
+.card__wrapper {
+    display: flex;
+    padding: 60px;
+}
+.card {
+    width: 400px;
+    height: 200px;
+    background-color: rgb(184, 190, 190);
+    border: 10px solid #5c3535;
+    border-radius: 10%;
+    /* text-shadow: 2px slategrey; */
+}
+.card__heading {
+    text-align: center;
+}
+.card__content {
+    padding: 0 20px 20px;
+}
+.card__content h,p {
+    text-align: left;
+}
+.card__left {
+    margin: 0 60px;
+}
+.card__right {
+    margin: 0 60px;
+} 
 /* home.html */
+
+/* footer */
+.footer {
+    height: 60px;
+    background-color: #492828;
+}
+.copyright {
+    color: rgb(153, 158, 158);
+    text-align: center;
+    padding: 20px;
+}
+/* footer */
+
