@@ -1,10 +1,8 @@
+/* index */
 .front__body {
-    /* border: 10px solid rgb(174, 184, 184); */
-    /* border-radius: 10%; */
     border-radius: 10%;
     background-color: #5c3535;
     color: black !important;
-    /* background-size: cover; */
     margin: 20px 40px;
 }
 .front__heading1 {
@@ -37,35 +35,56 @@
     border: 2px solid rgb(174, 184, 184);
     border-radius: 20%;
 }
+/* index */
 
 /* home.html */
+body {
+  background-color: rgb(153, 158, 158);
+} 
 .header__content {
     display: flex;
-    padding: 30px 60px;
+    padding: 20px 60px;
+    margin: 0; 
 }
-/* .first__wrapper {
-    float: left;
+.nav__headerwrap1 {
+  list-style: none;
+  align-content: center;
+  padding: 0 60px 0 0;
 }
-.second__wrapper {
-    float: right;
-} */
+.nav__headerwrap2 {
+  list-style: none;
+    padding: 0 60px 0;
+}
+.nav__headerwrap3 {
+  list-style: none;
+    padding: 0 0 0 60px;
+}
+/* .push__right {
+  margin-left: auto;
+}  */
+.nav__list {
+  list-style: none;
+  padding: 0;
+}
+.nav__list li {
+  display: inline-block;
+}
 .header__logo {
     width: 300px;
-    height: 50px;
+    height: 60px;
     align-content: center !important;
-    padding: 20px;
+    padding: 20px 60px 20px;
 }
 .logo {
     color: rgb(153, 158, 158);
     text-decoration: none;
-    /* padding: 20px; */
+    padding: 20px;
 }
 .nav__header {
     height: 60px;
     border-radius: 10%;
     background-color: #492828;
     text-align: center;
-
 }
 .nav__text {
     color: rgb(13, 14, 14);
@@ -73,9 +92,6 @@
     letter-spacing: 2px;
     padding: 10px;
 }
-body {
-    background-color: rgb(153, 158, 158);
-} 
 .nav__leftheader {
     display: inline;
     float: left;
@@ -96,35 +112,83 @@ body {
 .text__link {
     text-decoration: none;
 }
-.welcome__text {
+.welcome__text1 {
     letter-spacing: 2px;
+    padding: 20px 0;
+}
+.welcome__text2 {
+  padding: 0 0 20px 0;
+}
+.link__here {
+  color: #5c3535;
 }
 .card__wrapper {
     display: flex;
-    padding: 60px;
-    text-align: center;
+    justify-content: space-between;
+    padding: 0 60px 60px;
 }
 .card {
     width: 400px;
-    height: 200px;
+    height: 250px;
     background-color: rgb(184, 190, 190);
     border: 10px solid #5c3535;
     border-radius: 10%;
+    margin: 20px;
     /* text-shadow: 2px slategrey; */
 }
 .card__heading {
     text-align: center;
 }
 .card__content {
-    padding: 0 20px 20px;
+    text-align: left;
+    padding: 0 20px;
 }
-.card__left {
-    margin: 0 60px;
+.myproject {
+  color: rgb(0, 0, 0);
 }
-.card__right {
-    /* margin: 0 60px; */
-} 
 /* home.html */
+
+
+/* contact */
+.contact__heading {
+  text-align: left; 
+  font-size: 20px; 
+  letter-spacing: 2px;
+}
+.form__length {
+  width: 350px;
+}
+.contact__one {
+  list-style-type: none;
+  letter-spacing: 2px;
+  padding: 0 60px 60px;
+}
+.contact__two {
+  list-style-type: none;
+  padding: 0 60px 60px;
+}
+.contact__three {
+  padding: 20px 20px 0;
+}
+/* contact */
+
+/* about */
+.about__figure {
+  height: 200px;
+  width: 200px;
+  text-align: left;
+  margin: 0;
+}
+.about__figure img {
+  height: 100%;
+  width: 100%;
+  border: 2px solid #5c3535;
+  border-radius: 20%;
+}
+.main__about {
+  height: 312px;
+}
+/* about */
 
 /* footer */
 .footer {
