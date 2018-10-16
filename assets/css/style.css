@@ -133,9 +133,9 @@ body {
 }
 .card__wrapper {
     display: flex;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     /* flex-direction: column; */
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     padding: 0 60px 60px;
 }
