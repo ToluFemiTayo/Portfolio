@@ -1,5 +1,5 @@
 /* index */
-.front__body {
+.front__wrapper {
   min-height: 555px;
   border-radius: 10%;
   background-color: #5c3535;
@@ -69,16 +69,17 @@ a:hover{
   margin: 0 auto; 
 }
 .nav__headerwrap1 {
-list-style: none;
-align-content: center;
-padding: 0 60px 0 0;
+  max-width: 290px;
+  list-style: none;
+  padding: 0 60px 0 0;
 }
 .nav__headerwrap2 {
   list-style: none;
   padding: 0 60px 0;
 }
 .nav__headerwrap3 {
-list-style: none;
+  max-width: 290px;
+  list-style: none;
   padding: 0 0 0 60px;
 }
 /* .push__right {
@@ -115,6 +116,7 @@ display: inline-block;
   padding: 10px;
 }
 .main__wrapper {
+  min-height: 555px;
   padding: 0 60px 60px;
 }
 .text__link {
@@ -123,11 +125,11 @@ display: inline-block;
 .welcome__text1 {
   font-size: 20px;
   letter-spacing: 2px;
-  padding: 20px 0;
+  padding: 20px 10px;
 }
 .welcome__text2 {
   font-size: 20px;
-  padding: 0 0 20px 0;
+  padding: 0 10px 20px;
 }
 .link__here {
 color: #5c3535;
@@ -140,8 +142,8 @@ color: #5c3535;
   padding: 0 60px 60px;
 }
 .card {
-  width: 400px;
-  height: 250px;
+  max-width: 400px;
+  min-height: 250px;
   background-color: rgb(184, 190, 190);
   border: 10px solid #5c3535;
   border-radius: 10%;
@@ -152,11 +154,16 @@ color: #5c3535;
   text-align: left;
   padding: 0 20px 20px;
 }
-.card__heading {
+.card__title {
   text-align: center;
+  padding: 20px 0 0;
+  margin: 0;
 }
-.myproject {
-color: rgb(0, 0, 0);
+.myprojects {
+  padding: 0 20px;
+}
+.project__text {
+  color: #000000;
 }
 /* home.html */
 
@@ -188,6 +195,10 @@ padding: 0 60px 60px;
 }
 .contact__three {
 padding: 20px 20px 0;
+}
+.contact__placeholder {
+  text-align: center;
+  padding: 5px;
 }
 /* contact */
 
