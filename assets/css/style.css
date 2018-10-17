@@ -61,6 +61,13 @@ a:hover{
   text-decoration: none;
   color: rgb(202, 122, 31);
 }
+.text__link {
+  text-decoration: none;
+}
+.link__here {
+  color: #5c3535;
+  }
+/* link styles */
 .header__content {
   display: flex;
   justify-content: space-between;
@@ -115,9 +122,6 @@ display: inline-block;
   min-height: 555px;
   padding: 0 60px 60px;
 }
-.text__link {
-  text-decoration: none;
-}
 .welcome__text1 {
   font-size: 20px;
   letter-spacing: 2px;
@@ -126,9 +130,6 @@ display: inline-block;
 .welcome__text2 {
   font-size: 20px;
   padding: 0 10px 20px;
-}
-.link__here {
-color: #5c3535;
 }
 .card__wrapper {
   display: flex;
