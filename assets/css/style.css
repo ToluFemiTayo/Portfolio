@@ -53,14 +53,25 @@
 /* home.html */
 html, body {
 background-color: rgb(153, 158, 158);
-max-height: 100px;
+/* min-height: 100px; */
 margin: 0;
+}
+.nav__wrapper {
+  min-height: 140px;
+  position: sticky;
+  background-color: rgb(153, 158, 158);
 }
 /* link styles */
 a:hover{
   text-decoration: none;
   color: rgb(202, 122, 31);
 }
+/* :active {
+  border-bottom: #492828;
+} 
+:visited {
+
+} */
 .text__link {
   text-decoration: none;
 }
@@ -117,9 +128,11 @@ display: inline-block;
   text-decoration: none;
   letter-spacing: 2px;
   padding: 10px;
+  text-shadow: #492828;
 }
 .main__wrapper {
-  min-height: 555px;
+  /* min-height: 555px; */
+  background-color: rgb(153, 158, 158);  
   padding: 0 60px 60px;
 }
 .welcome__text1 {
