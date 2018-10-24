@@ -12,23 +12,34 @@
 
 <body>
   <header>
-    <nav class="nav__wrapper">
-      <ul class="header__content">
-        <li class="nav__headerwrap1">
-          <ul class="nav__list">
+    <!-- Navigations and menus stay here -->
+    <nav class="nav1">
+      <ul class="nav1__list">
+        <li class="nav1__left">
+          <ul class="nav1__list">
             <li>
-              <a href="home.html" class="nav__link nav__text active">HOME</a>
+              <a href="home.html" class="nav__menulink">HOME</a>
             </li>
             <li>
-              <a href="about.html" class="nav__link nav__text">ABOUT</a>
+              <a href="about.html" class="nav1__link">ABOUT</a>
             </li>
             <li>
-              <a href="contact.html" class="nav__link nav__text">CONTACT</a>
+              <a href="contact.html" class="nav1__link">CONTACT</a>
             </li>
           </ul>
         </li>
-        <li class="nav__headerwrap2">
-          <div class="header__logo">
+        <li class="nav1__right">
+          <ul class="nav__list2">
+            <li>
+              <a href="about.html" class="nav1__link">SKILLS</a>
+            </li>
+            <li>
+              <a href="photo.html" class="nav1__link">PARTNERSHIP</a>
+            </li>
+          </ul>
+        </li>
+        <li class="logo__header">
+          <div class="nav__logo">
             <nav class="nav__header">
               <div class="logo">
                 <a href="index.html" class="nav__link front__link">
@@ -38,18 +49,9 @@
             </nav>
           </div>
         </li>
-        <li class="nav__headerwrap3">
-          <ul class="nav__list">
-            <li>
-              <a href="#" class="nav__link nav__text">SKILLS</a>
-            </li>
-            <li>
-              <a href="#" class="nav__link nav__text">PARTNERSHIP</a>
-            </li>
-          </ul>
-        </li>
       </ul>
     </nav>
+
   </header>
 
   <main>
@@ -77,7 +79,7 @@
             <li>
               Twitter:
               <ul class="contact__two">
-                <li class="contact__three"> 
+                <li class="contact__three">
                   <a href="https://twitter.com/toluwalopefemi1" target="_blank" class="text__link link__here">@toluwalopefemi1</a>
                 </li>
               </ul>
@@ -85,32 +87,34 @@
           </ul>
         </section>
         <!-- fill form  -->
-        <div class="card">
-          <div class="card__content">
-            <h3 class="card__title">Form</h3>
-            <div>
-              <label>Name:</label>
-              <br>
-              <input type="text" class="form__length contact__placeholder" name="name" placeholder="Enter your full name">
-            </div>
-            <div>
-              <label>Email address:</label>
-              <br>
-              <input type="email" class="form__length contact__placeholder" name="email" placeholder="name@example.com">
-            </div>
-            <div>
-              <label>Message:</label>
-              <br>
-              <textarea class="form__length contact__placeholder" name="message" rows="3" placeholder="Type your message here"></textarea>
-            </div>
-            <div>
-              <!-- feedback: modal on submit -->
-              <a href="#">
-                <button type="submit">Submit</button>
-              </a>
+        <section class="contact__form">
+          <div class="card">
+            <div class="card__content">
+              <h3 class="card__title">Form</h3>
+              <div>
+                <label>Name:</label>
+                <br>
+                <input type="text" class="form__length contact__placeholder" name="name" placeholder="Enter your full name">
+              </div>
+              <div>
+                <label>Email address:</label>
+                <br>
+                <input type="email" class="form__length contact__placeholder" name="email" placeholder="name@example.com">
+              </div>
+              <div>
+                <label>Message:</label>
+                <br>
+                <textarea class="form__length contact__placeholder" name="message" rows="3" placeholder="Type your message here"></textarea>
+              </div>
+              <div>
+                <!-- feedback: modal on submit -->
+                <a href="#">
+                  <button type="submit">Submit</button>
+                </a>
+              </div>
             </div>
           </div>
-        </div>
+        </section>
       </section>
     </section>
   </main>

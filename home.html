@@ -9,28 +9,38 @@
   <link href="assets/css/style.css" type="text/css" rel="stylesheet" />
 
   <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-  <script src="main.js"></script>
 </head>
 
 <body>
   <header>
-    <nav class="nav__wrapper">
-      <ul class="header__content">
-        <li class="nav__headerwrap1">
-          <ul class="nav__list">
+    <!-- Navigations and menus stay here -->
+    <nav class="nav1">
+      <ul class="nav1__list">
+        <li class="nav1__left">
+          <ul class="nav1__list">
             <li>
-              <a href="home.html" class="nav__link nav__text active">HOME</a>
+              <a href="home.html" class="nav__menulink">HOME</a>
             </li>
             <li>
-              <a href="about.html" class="nav__link nav__text">ABOUT</a>
+              <a href="about.html" class="nav1__link">ABOUT</a>
             </li>
             <li>
-              <a href="contact.html" class="nav__link nav__text">CONTACT</a>
+              <a href="contact.html" class="nav1__link">CONTACT</a>
             </li>
           </ul>
         </li>
-        <li class="nav__headerwrap2">
-          <div class="header__logo">
+        <li class="nav1__right">
+          <ul class="nav__list2">
+            <li>
+              <a href="about.html" class="nav1__link">SKILLS</a>
+            </li>
+            <li>
+              <a href="photo.html" class="nav1__link">PARTNERSHIP</a>
+            </li>
+          </ul>
+        </li>
+        <li class="logo__header">
+          <div class="nav__logo">
             <nav class="nav__header">
               <div class="logo">
                 <a href="index.html" class="nav__link front__link">
@@ -40,18 +50,9 @@
             </nav>
           </div>
         </li>
-        <li class="nav__headerwrap3">
-          <ul class="nav__list">
-            <li>
-              <a href="#" class="nav__link nav__text">SKILLS</a>
-            </li>
-            <li>
-              <a href="#" class="nav__link nav__text">PARTNERSHIP</a>
-            </li>
-          </ul>
-        </li>
       </ul>
     </nav>
+
   </header>
 
   <main>
@@ -65,6 +66,10 @@
           </a>
         </p>
       </section>
+      <section class="button">
+        <div class="button__link text__link">Hire Me</div>
+      </section>
+      <!-- card here -->
       <section class="card__wrapper">
         <div class="card">
           <div class="card__content">
@@ -96,10 +101,6 @@
         </div>
       </section>
 
-
-
-
-
       <!-- <section> -->
       <!-- <div class="socialmedia"> -->
       <!-- use this as Sidebar which pups out when mouse is on the footer...add icons-->
@@ -122,12 +123,28 @@
 				<p>I have a lot of skills ranging form design, to HTML, CSS, JavaScript and Bootcamp</p>
       -->
     </section>
+    <aside class="sidebar">
+      <div class="card__aside">
+        <div class="card__asidecontent">
+          <h3 class="card__title">Hire Me</h3>
+          <p>Hello, I am Omodara Tolulope</p>
+          <p>Frontend Developer</p>
+          <p>Africa, Nigeria, is my homeland</p>
+          <p>If I am not freelacing then I'm working remotely for my clients all over the world
+          </p>
+        </div>
+      </div>
+    </aside>
   </main>
   <footer>
     <section class="footer">
       <p class="copyright">&copy; 2018</p>
     </section>
   </footer>
+  <script src="assets/plugins/jquery.min.js"></script>
+  <script src="assets/plugins/popper.min.js"></script>
+  <script src="jquery.js"></script>
+  <script src="main.js"></script>
 </body>
 
 </html>
