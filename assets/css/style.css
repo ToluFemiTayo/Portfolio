@@ -57,6 +57,19 @@ background-color: rgb(153, 158, 158);
 width: auto;
 height: auto;
 }
+.page__wrapper {
+  padding: 0 60px 60px;
+}
+.page__heading {
+  text-align: center; 
+  font-size: 25px; 
+  letter-spacing: 2px;
+}
+.text {
+  font-size: 20px;
+  padding: 0 0 20px;
+  margin: 0;
+}
 .button {
   width: 60px;
   padding: 20px 0;
@@ -138,7 +151,7 @@ a:hover{
   margin: 0;
 }
 .nav1__wrapper {
-  padding: 0 60px;
+  padding: 60px;
   margin: 0;
 }
 
@@ -220,23 +233,37 @@ a:hover{
   padding: 20px 0;
   margin: 0;
 }
-.card__wrapper {
+.row {
   display: flex;
-  /* flex-direction: column; */
   justify-content: space-between;
-  align-items: center;
-  padding: 0 60px 60px;
+
+}
+.column {
+  flex: 50%;
+  /* width: 420px; */
+  padding: 60px;
+}
+.card__wrapper {
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: space-between; */
+  /* align-items: center; */
+  /* height: 300px; */
+  /* text-align: center; */
+  align-content: center;
+  padding: 60px;
 }
 .card {
-  min-width: 400px;
-  min-height: 250px;
+  width: 400px;
+  height: 250px;
   background-color: rgb(184, 190, 190);
   border: 10px solid #5c3535;
   border-radius: 10%;
-  margin: 20px;
+  box-shadow: 0 5px #666;
+  margin: 0;
 }
 .card__content {
-  width: 100%;
+  /* width: 100%; */
   height: 100%;
   text-align: left;
   padding: 0 20px 20px;
@@ -244,7 +271,7 @@ a:hover{
 .card__title {
   text-align: center;
   padding: 20px 0 0;
-  margin: 0;
+  margin: 0 auto;
 }
 .myprojects {
   padding: 0 20px;
@@ -263,11 +290,7 @@ a:hover{
 
 
 /* contact */
-.contact__heading {
-text-align: left; 
-font-size: 20px; 
-letter-spacing: 2px;
-}
+
 .form__length {
 width: 350px;
 }
@@ -306,6 +329,44 @@ border: 2px solid #5c3535;
 border-radius: 20%;
 }
 /* about */
+
+
+/* hire me */
+.note {
+  color: #5c3535;
+  font-size: 15px !important;
+  text-align: justify;
+}
+.input__size {
+  width: 420px;
+  height: 20px;
+  padding: 2px 0;
+  margin: 5px 0;
+}
+.select__option {
+  height: 30px;
+  margin: 2px;
+}
+.textarea {
+  width: 420px;
+  height: 50px;
+  margin: 5px 0;
+  /* columns: 400px; */
+  /* grid-auto-rows: 10px; */
+}
+.form__wrap {
+  padding: 0 60px;
+}
+.check__box {
+  padding: 0 0 20px;
+  margin: 0;
+}
+.submit {
+  width: 60px;
+  height: 30px;
+  text-align: center;
+}
+/* hire me */
 
 
 /* aside */
@@ -350,3 +411,10 @@ border-radius: 20%;
   padding: 20px;
 }
 /* footer */
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+      width: 100%;
+  }
+}
