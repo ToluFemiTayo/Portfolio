@@ -74,19 +74,24 @@ height: auto;
   width: 60px;
   padding: 20px 0;
 }
-.button__link {
-  width: 60px;
-  height: 20px;
-  text-align: center;
+.learn__more {
+  padding: 20px 0;
+}
+.btn {
   border: 2px solid #492828;
-  color: #1d6d2a;
-  background-color: rgb(184, 190, 190);
+  border-radius: 5px;
+  color: #256630;
+  background-color: rgb(153, 158, 158);
   padding: 5px;
-  margin: 0;
+  cursor: pointer;
 }
-.button__link:hover {
+.success:hover {
+  /* background-color: #4CAF50; */
   color: rgb(202, 122, 31);
+  background-color: rgb(184, 190, 190);
+  /* color: white; */
 }
+
 /* link styles */
 a:hover{
   text-decoration: none;
@@ -105,20 +110,7 @@ a:hover{
   color: #5c3535;
   }
 /* link styles */
-header {
-  position: sticky;
-  background-color: rgb(153, 158, 158);
-  padding: 0;
-}
 
-.nav__wrapper {
-  min-height: 140px;
-  position: sticky;
-  font-weight:bold; 
-  background-color: rgb(153, 158, 158);
-  /* padding: 0 60px; */
-
-}
 /* link styles */
 a:hover{
   text-decoration: none;
@@ -137,9 +129,22 @@ a:hover{
   }
 /* link styles */
 
-.nav1 {
-  background-color: rgb(153, 158, 158);  
+
+/* header */
+.header {
+  background-color: rgb(153, 158, 158);
   padding: 0 60px;
+}
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  /* padding: 0 60px; */
+  /* width: 100% */
+}
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + main + footer {
+  padding: 60px 0 0;
 }
 
 .nav1__list {
@@ -150,18 +155,6 @@ a:hover{
   padding-left: 0;
   margin: 0;
 }
-.nav1__wrapper {
-  padding: 60px;
-  margin: 0;
-}
-
-/* float fix */
-.nav1__list:before,
-.nav1__list:after {
-  content: "";
-  display: table;
-  clear: both;
-}
 
 .nav1__list li {
   display: inline-block;
@@ -171,14 +164,21 @@ a:hover{
   width: 400px;
   float: left;
 }
+.nav1__right {
+  width: 392px;
+  float: right;
+  text-align: end;
+}
+/* float fix */
+.nav1__list:before,
+.nav1__list:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 .logo__header {
   text-align: center;
 }
-.nav1__right {
-  width: 300px;
-  float: right;
-}
-
 .nav1__link {
   color: #222222;
   display: block;
@@ -192,18 +192,11 @@ a:hover{
   text-decoration: none;
 }
 
-
-
 .nav__logo {
   width: 300px;
   height: 60px;
   text-align: center;
   padding: 30px 60px;
-}
-.logo {
-  color: rgb(153, 158, 158);
-  text-decoration: none;
-  padding: 20px;
 }
 .nav__header {
   height: 60px;
@@ -211,12 +204,20 @@ a:hover{
   background-color: #492828;
   text-align: center;
 }
+.logo {
+  color: rgb(153, 158, 158);
+  text-decoration: none;
+  padding: 20px;
+}
 .nav__text {
   color: rgb(13, 14, 14);
   text-decoration: none;
   letter-spacing: 2px;
   padding: 10px;
   text-shadow: #492828;
+/* header */
+
+
 }.main__wrapper {
   /* min-height: 555px; */
   background-color: rgb(153, 158, 158);  
@@ -400,15 +401,17 @@ border-radius: 20%;
 }
 /* aside */
 /* footer */
-.footer {
+.footer__nav {
   width: 100%;
+  background-color: #5c3535;
+  padding: 0 60px;
   height: 60px;
-  background-color: #492828;
 }
 .copyright {
   color: rgb(153, 158, 158);
   text-align: center;
   padding: 20px;
+  margin: 0;
 }
 /* footer */
 
