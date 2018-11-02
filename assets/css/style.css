@@ -89,29 +89,15 @@ height: auto;
   /* background-color: #4CAF50; */
   color: rgb(202, 122, 31);
   background-color: rgb(184, 190, 190);
-  /* color: white; */
 }
 
 /* link styles */
-a:hover{
-  text-decoration: none;
-  color: rgb(202, 122, 31);
-}
-/* :active {
-  border-bottom: #492828;
-} 
-:visited {
-
-} */
 .text__link {
   text-decoration: none;
 }
 .link__here {
   color: #5c3535;
   }
-/* link styles */
-
-/* link styles */
 a:hover{
   text-decoration: none;
   color: rgb(202, 122, 31);
@@ -121,12 +107,7 @@ a:hover{
 } 
 :visited {
 } */
-.text__link {
-  text-decoration: none;
-}
-.link__here {
-  color: #5c3535;
-  }
+
 /* link styles */
 
 
@@ -137,10 +118,9 @@ a:hover{
 }
 /* The sticky class is added to the header with JS when it reaches its scroll position */
 .sticky {
+  height: 100px;
   position: fixed;
   top: 0;
-  /* padding: 0 60px; */
-  /* width: 100% */
 }
 /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
 .sticky + main + footer {
@@ -155,11 +135,9 @@ a:hover{
   padding-left: 0;
   margin: 0;
 }
-
 .nav1__list li {
   display: inline-block;
 }
-
 .nav1__left {
   width: 400px;
   float: left;
@@ -169,6 +147,7 @@ a:hover{
   float: right;
   text-align: end;
 }
+
 /* float fix */
 .nav1__list:before,
 .nav1__list:after {
@@ -191,7 +170,6 @@ a:hover{
   padding: 10px 12px 10px 0;
   text-decoration: none;
 }
-
 .nav__logo {
   width: 300px;
   height: 60px;
@@ -215,11 +193,12 @@ a:hover{
   letter-spacing: 2px;
   padding: 10px;
   text-shadow: #492828;
+}
 /* header */
 
 
-}.main__wrapper {
-  /* min-height: 555px; */
+.main__wrapper {
+  height: 100%;
   background-color: rgb(153, 158, 158);  
   padding: 0 60px 60px;
 }
@@ -237,11 +216,9 @@ a:hover{
 .row {
   display: flex;
   justify-content: space-between;
-
 }
 .column {
   flex: 50%;
-  /* width: 420px; */
   padding: 60px;
 }
 .card__wrapper {
@@ -264,7 +241,6 @@ a:hover{
   margin: 0;
 }
 .card__content {
-  /* width: 100%; */
   height: 100%;
   text-align: left;
   padding: 0 20px 20px;
@@ -291,21 +267,20 @@ a:hover{
 
 
 /* contact */
-
 .form__length {
-width: 350px;
+  max-width: 325px;
 }
 .contact__one {
-list-style-type: none;
-letter-spacing: 2px;
-padding: 0 60px 60px;
+  list-style-type: none;
+  letter-spacing: 2px;
+  padding: 0 60px 60px;
 }
 .contact__two {
-list-style-type: none;
-padding: 0 60px 60px;
+  list-style-type: none;
+  padding: 0 60px 60px;
 }
 .contact__three {
-padding: 20px 20px 0;
+  padding: 20px 20px 0;
 }
 .contact__placeholder {
   text-align: center;
@@ -318,10 +293,10 @@ padding: 20px 20px 0;
 
 /* about */
 .about__figure {
-height: 200px;
-width: 200px;
-text-align: left;
-margin: 0;
+  height: 200px;
+  width: 200px;
+  text-align: left;
+  margin: 0;
 }
 .about__figure img {
 height: 100%;
@@ -400,6 +375,7 @@ border-radius: 20%;
   padding: 0 20px 20px;
 }
 /* aside */
+
 /* footer */
 .footer__nav {
   width: 100%;
