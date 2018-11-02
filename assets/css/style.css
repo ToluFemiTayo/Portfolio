@@ -196,6 +196,62 @@ a:hover{
 }
 /* header */
 
+/* social icons */
+#leftside {
+  display: block;
+  position: fixed;
+  top: 50%;
+  margin: 10px 0 0;
+  width: auto;
+  z-index: 99999;
+  text-align: center;
+  /* left: 11px; */
+}
+.mediaicons {
+  list-style-type: none;
+  padding: 20px 20px 20px 10px;
+  margin: 0;
+}
+.twitter {
+  height: 20px;
+  width: 20px;
+  border: 2px solid #492828;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+  margin: 0 0 5px;
+  /* background-color: rgb(184, 190, 190); */
+}
+.facebook {
+  height: 20px;
+  width: 20px;
+  border: 2px solid #492828;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+  margin: 0 0 5px;
+}
+.linkedin {
+  height: 20px;
+  width: 20px;
+  border: 2px solid #492828;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+  margin: 0 0 5px;
+}
+.google {
+  height: 20px;
+  width: 20px;
+  border: 2px solid #492828;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+  margin: 0 0 5px;
+}
+/* social icons */
+
+
 
 .main__wrapper {
   height: 100%;
