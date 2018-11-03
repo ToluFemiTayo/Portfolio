@@ -11,7 +11,8 @@ function myFunction() {
 
 
 $(".btn").on("click", function (e) {
-  console.log(e);
+  // console.log(e);
   $(".sidebar").toggleClass("show");
 });
 
+var _form = document.getElementsByClassName("form__fill")[0];
