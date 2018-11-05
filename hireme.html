@@ -7,6 +7,9 @@
   <title>ToluFemiTayoPort.com</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="assets/css/style.css" type="text/css" rel="stylesheet" />
+  <link href="assets/js/main.js" typce="text/css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+    crossorigin="anonymous">
 </head>
 
 <body>
@@ -70,49 +73,48 @@
           </p>
         </section>
         <section>
-          <form>
+          <form action="javascript:alert( 'successful! Your request is being processed.' );">
             <div class="row">
               <div class="column">
-                <div>
-                  <h4 class="welcome__text1 text">About You</h4>
-                  <p class="text">Your name
-                    <span class="required">*</span>
-                    <br>
-                    <span class="form-control-wrap your-name">
-                      <input type="text" name="your-name" value="" class="input__size    form-control validates-as-required" placeholder="eg. Omodara Tolulope">
-                    </span>
-                  </p>
-                  <p class="text">Email address
-                    <span class="required">*</span>
-                    <br>
-                    <span class="form-control-wrap email">
-                      <input type="email" name="email" value="" class="input__size      form-control validates-as-required validates-as-email"
-                        placeholder="eg. omodarafemi2123@gmail.com">
-                    </span>
-                  </p>
-                  <p class="text">Contact method
-                    <br>
-                    <span class="note">
-                      number or Skype/Google Hangouts username
-                    </span>
-                    <br>
-                    <span class="form-control-wrap contact">
-                      <input type="text" name="contact" value="" class="input__size     form-control" placeholder="eg. +2347033703857">
-                    </span>
-                  </p>
-                  <p class="text">Your website
-                    <br>
-                    <span class="form-control-wrap website">
-                      <input type="text" name="website" value="" class="input__size    form-control" placeholder="eg. example.co.org">
-                    </span>
-                  </p>
-                  <p class="text">How did you hear about me?
-                    <br>
-                    <span class="form-control-wrap hear">
-                      <input type="text" name="hear" value="" class="input__size   form-control" placeholder="eg. Google, Twitter, referred by..., etc">
-                    </span>
-                  </p>
-                </div>
+                <h4 class="welcome__text1 text">About You</h4>
+                <p class="text">Your name
+                  <!-- <span class="required">*</span> -->
+                  <br>
+                  <span>
+                    <input type="text" name="name" class="input__size form__control" placeholder="eg. Omodara Tolulope">
+                  </span>
+                  <small class="form__text d__none">Please, fill this place.</small>
+                </p>
+                <p class="text">Email address
+                  <!-- <span class="required">*</span> -->
+                  <br>
+                  <span>
+                    <input type="email" name="email" class="input__size form__control" placeholder="eg. omodarafemi2123@gmail.com">
+                  </span>
+                  <small class="form__text d__none">Your email is not correct.</small>
+                </p>
+                <p class="text">Contact method
+                  <br>
+                  <span class="note">
+                    number or Skype/Google Hangouts username
+                  </span>
+                  <br>
+                  <span>
+                    <input type="text" name="contact" class="input__size form__control" placeholder="eg. +2347033703857">
+                  </span>
+                </p>
+                <p class="text">Your website
+                  <br>
+                  <span>
+                    <input type="text" name="website" class="input__size form__control" placeholder="eg. example.co.org">
+                  </span>
+                </p>
+                <p class="text">How did you hear about me?
+                  <br>
+                  <span>
+                    <input type="text" name="hear" class="input__size form__control" placeholder="eg. Google, Twitter, referred by..., etc">
+                  </span>
+                </p>
               </div>
               <div class="column">
                 <div>
@@ -124,13 +126,13 @@
                   </span>
                   <p class="text">Your Budget
                     <br>
-                    <span class="form-control-wrap budget">
-                      <input type="text" name="budget" value="" class="input__size   form-control" placeholder="eg. £2000">
+                    <span>
+                      <input type="text" name="budget" class="input__size form__control" placeholder="eg. £2000">
                     </span>
                   </p>
                   <p class="text">Your ideal completion from the start date
-                    <span class="form-control-wrap timeline">
-                      <select name="timeline" class="form-control select select__option" aria-invalid="false">
+                    <span>
+                      <select name="timeline" class="form__control select select__option" aria-invalid="false">
                         <option value="Please select">Please select</option>
                         <option value="As soon as possible">As soon as possible</option>
                         <option value="In 1 month">In 1 month</option>
@@ -143,15 +145,14 @@
                   </p>
                 </div>
                 <h4 class="welcome__text1 text">Project Description
-                  <span class="required">*</span>
                 </h4>
                 <span class="note">
                   briefly describe your project, what you aim to achieve, what you'd like me to do, and link to any appropriate materials.
-                  <!-- (such as PSDs available via Dropbox) -->
                 </span>
-                <span class="form-control-wrap description">
-                  <textarea name="description" class="textarea  form-control validates-as-required" placeholder="Please briefly describe your project"></textarea>
+                <span>
+                  <textarea name="description" class="textarea form__control" placeholder="Please briefly describe your project"></textarea>
                 </span>
+                <small class="form__text d__none">Please, fill this place.</small>
               </div>
             </div>
             <div class="text form__wrap">
@@ -163,7 +164,7 @@
                 </small>
               </p>
               <div class="button">
-                <input type="submit" value="Send" class="submit    form-control">
+                <input type="submit" value="Send" class="submit form__control">
                 <span class="ajax-loader"></span>
               </div>
             </div>

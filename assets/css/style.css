@@ -114,7 +114,7 @@ a:hover{
 }
 /* The sticky class is added to the header with JS when it reaches its scroll position */
 .sticky {
-  height: 100px;
+  min-height: 100px;
   position: fixed;
   top: 0;
   box-shadow: 0 5px #666;
@@ -247,21 +247,25 @@ a:hover{
 .welcome__text1 {
   font-size: 20px;
   letter-spacing: 2px;
+  text-align: justify;
   padding: 20px 0;
   margin: 0;
 }
 .welcome__text2 {
   font-size: 20px;
+  text-align: justify;
   padding: 20px 0;
   margin: 0;
 }
 .row {
+  width: 100%;
   display: flex;
   justify-content: space-between;
 }
 .column {
+  width: 425px;
   flex: 50%;
-  padding: 60px;
+  /* padding: 60px; */
 }
 .card__wrapper {
   /* display: flex; */
@@ -275,7 +279,7 @@ a:hover{
 }
 .card {
   width: 400px;
-  height: 250px;
+  height: 310px;
   background-color: rgb(184, 190, 190);
   border: 10px solid #5c3535;
   border-radius: 10%;
@@ -310,7 +314,7 @@ a:hover{
 
 /* contact */
 .form__length {
-  max-width: 325px;
+  width: 345px;
 }
 .contact__one {
   list-style-type: none;
@@ -330,6 +334,19 @@ a:hover{
 }
 .contact__form {
   width: 400px;
+}
+.form__control {
+  color: #1a7430;
+}
+.form__text {
+  color: #e41122;
+}
+.is__invalid {
+  color: #e41122;
+  border: #e41122;
+}
+.d__none {
+  display: none;
 }
 /* contact */
 
@@ -351,6 +368,7 @@ a:hover{
 
 /* hire me */
 .note {
+  width: 420px;
   color: #5c3535;
   font-size: 15px !important;
   text-align: justify;
@@ -371,9 +389,11 @@ a:hover{
   margin: 5px 0;
 }
 .form__wrap {
-  padding: 0 60px;
+  padding: 0 0 20px;
 }
 .check__box {
+  /* width: 425px; */
+  text-align: justify;
   padding: 0 0 20px;
   margin: 0;
 }
@@ -418,7 +438,7 @@ a:hover{
 
 /* footer */
 .footer__nav {
-  /* width: 100%; */
+  width: 100%;
   background-color: #5c3535;
   padding: 0 60px;
   height: 60px;
@@ -431,9 +451,32 @@ a:hover{
 }
 /* footer */
 
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .row {
-    height: auto;
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (min-width: 748px) {
+  .card, .row {
+    display: flex;
+    justify-content: space-between;
+  }
+  .column {
+    width: 350px;
+    padding: 60px;
+  }
+  .input__size, .textarea {
+    width: 300px;
+  }
+  .note {
+    width: 200px;
+  }
+}
+@media (max-width: 768px) {
+  .card, .row {
+    display: block;
+  }
+  .column {
+    width: 300px;
+    padding: 60px;
+  }
+  .input__size {
+    width: 300px;
   }
 }
