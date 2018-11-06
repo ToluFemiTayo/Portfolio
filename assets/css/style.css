@@ -61,6 +61,12 @@ background-color: rgb(153, 158, 158);
   text-align: center; 
   font-size: 25px; 
   letter-spacing: 2px;
+  padding: 60px 0 60px;
+  margin: 0;
+}
+.wrap {
+  padding: 0 60px !important;
+  margin: 0;
 }
 .text {
   font-size: 20px;
@@ -258,27 +264,21 @@ a:hover{
   margin: 0;
 }
 .row {
-  width: 100%;
+  /* width: 100%; */
   display: flex;
   justify-content: space-between;
 }
 .column {
-  width: 425px;
+  width: 100%;
   flex: 50%;
-  /* padding: 60px; */
+  padding: 60px;
 }
 .card__wrapper {
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* justify-content: space-between; */
-  /* align-items: center; */
-  /* height: 300px; */
-  /* text-align: center; */
   align-content: center;
   padding: 60px;
 }
 .card {
-  width: 400px;
+  width: 390px;
   height: 310px;
   background-color: rgb(184, 190, 190);
   border: 10px solid #5c3535;
@@ -289,11 +289,11 @@ a:hover{
 .card__content {
   height: 100%;
   text-align: left;
-  padding: 0 20px 20px;
+  padding: 0 30px 20px;
 }
 .card__title {
   text-align: center;
-  padding: 20px 0 0;
+  padding: 30px 0 0;
   margin: 0 auto;
 }
 .myprojects {
@@ -307,14 +307,14 @@ a:hover{
 
 /* about styles */
 .about__text {
-  padding: 0 0 60px;
+  padding: 0 60px 60px;
 }
 /* about styles */
 
 
 /* contact */
 .form__length {
-  width: 345px;
+  width: 320px;
 }
 .contact__one {
   list-style-type: none;
@@ -392,7 +392,6 @@ a:hover{
   padding: 0 0 20px;
 }
 .check__box {
-  /* width: 425px; */
   text-align: justify;
   padding: 0 0 20px;
   margin: 0;
@@ -438,7 +437,6 @@ a:hover{
 
 /* footer */
 .footer__nav {
-  width: 100%;
   background-color: #5c3535;
   padding: 0 60px;
   height: 60px;
@@ -467,16 +465,44 @@ a:hover{
   .note {
     width: 200px;
   }
-}
-@media (max-width: 768px) {
-  .card, .row {
+} 
+@media (max-width: 576px) {
+  ul .nav__list2 {
+    max-width: 400px;
+    text-align: start;
+    padding: 0 0 0 22px;
+  }
+  .card {
+    display: block;
+    width: 250px;
+    height: 300px;
+  } 
+  .card__wrapper .column {
+    padding: 60px 0;
+  }
+  .card__content ul {
+    width: 100%;
+  }
+  .page__wrapper ul {
+    padding: 0;
+  }
+  .row {
     display: block;
   }
   .column {
-    width: 300px;
+    width: 205px;
     padding: 60px;
   }
-  .input__size {
-    width: 300px;
+  .input__size, .text, .textarea {
+    width: 200px;
   }
+  section .text {
+    width: 100%;
+  }
+  .contact__form {
+    width: 100% !important;
+}
+  .form__length {
+    width: 180px;
+
 }
