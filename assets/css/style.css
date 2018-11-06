@@ -266,7 +266,10 @@ a:hover{
 .row {
   /* width: 100%; */
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  justify-content: center;
+  align-items: center;
 }
 .column {
   width: 100%;
@@ -374,7 +377,7 @@ a:hover{
   text-align: justify;
 }
 .input__size {
-  width: 420px;
+  width: 380px;
   height: 20px;
   padding: 2px 0;
   margin: 5px 0;
@@ -451,6 +454,7 @@ a:hover{
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media (min-width: 748px) {
+  
   .card, .row {
     display: flex;
     justify-content: space-between;
@@ -501,8 +505,47 @@ a:hover{
   }
   .contact__form {
     width: 100% !important;
-}
+  }
   .form__length {
     width: 180px;
-
+}
+@media (max-width: 335px) {
+  body {
+    width: 100%;
+    height: 100%;
+    font-size: 10px;
+  }
+  .header, .card__wrapper {
+    text-align: center;
+  }
+  .nav1__list, .nav1__right, .nav1__left {
+    width: 200px;
+  }
+  .nav1__link, .nav__menulink, .nav__list2 {
+    text-align: center !important;
+    padding: 10px 5px !important;
+  }
+  .nav__logo {
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    padding: 20px 30px;
+  }
+  .nav__header {
+    height: 50px;
+  }
+  .welcome__text1, .welcome__text2, .btn {
+    font-size: 10px;
+  }
+  .card__wrapper, .myprojects {
+    padding: 0;
+  }
+  .card {
+    width: 175px;
+    height: 167px;
+  }
+  .card__content {
+    padding: 0 20px;
+  }
+   
 }
