@@ -469,7 +469,11 @@ a:hover{
     width: 200px;
   }
 } 
-/* @media (max-width: 576px) {
+
+
+
+
+@media (max-width: 576px) {
   ul .nav__list2 {
     max-width: 400px;
     text-align: start;
@@ -507,7 +511,12 @@ a:hover{
   }
   .form__length {
     width: 180px;
-} */
+} 
+
+
+
+
+
 @media (max-width: 450px) {
   body {
     width: 100%;
@@ -553,8 +562,6 @@ a:hover{
   }
    
 }
-
-
 
 
 
@@ -684,6 +691,5 @@ a:hover{
 }  */
 
 
-@media (max-width: 720px x 1280) {
+/* @media (max-width: 720px x 1280) { */
 
-}
