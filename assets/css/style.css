@@ -570,9 +570,10 @@ a:hover{
   .nav1__list, .nav1__right, .nav1__left {
     width: 300px;
     text-align: center;
+    padding: 0;
   }
   .nav1__link, .nav__menulink, .nav__list2 {
-    text-align: center !important;
+    text-align: center;
     padding: 10px 5px !important;
   }
   .nav__logo {
@@ -701,6 +702,7 @@ a:hover{
   }
   .nav1__list, .nav1__right, .nav1__left {
     width: 300px;
+    padding: 0;
   }
   .nav1__link, .nav__menulink, .nav__list2 {
     text-align: center !important;
@@ -743,6 +745,8 @@ a:hover{
   .nav1__list, .nav1__right, .nav1__left {
     width: 300px;
     text-align: center;
+    padding: 0;
+    margin: 0;
   }
   .nav1__link, .nav__menulink, .nav__list2 {
     text-align: center !important;
@@ -867,7 +871,9 @@ a:hover{
     text-align: center;
   }
   .nav1__list, .nav1__right, .nav1__left {
-    width: 200px;
+    width: 250px;
+    padding: 0;
+    margin: 0;
   }
   .nav1__link, .nav__menulink, .nav__list2 {
     text-align: center !important;
