@@ -16,12 +16,14 @@ $(".btn").on("click", function (e) {
 // form fill
 var _form = document.getElementsByClassName("form__fill")[0];
 var _inputs = Array.from(_form.getElementsByClassName("form__contol"));
+// The following is a trick to reach the next sibling Element node in the DOM
 var _error = 0;
 var keyupHandler = function (e) {
   var _next = e.target.nextElementSibling;
   if (e.target.name === "name" ) {
    if (e.target.value.length < 6) {
     this.classList.add("is__invalid");
+    _error.innerHTML.add("error");
     _next.classList.remove("d__none");
    }
    else {
@@ -34,6 +36,7 @@ var keyupHandler = function (e) {
    var value = e.target.value;
    if (!regExp.test(String(value).toLowerCase())) {
     this.classList.add("is__invalid");
+    _error.innerHTML.add("error");
     _next.classList.remove("d__none");
    }
    else {
@@ -44,6 +47,7 @@ var keyupHandler = function (e) {
   else if (e.target.name === "message") {
    if (e.target.value.length < 10) {
     this.classList.add("is__invalid");
+    _error.innerHTML.add("error");
     _next.classList.remove("d__none");
    }
    else {
@@ -58,4 +62,5 @@ _inputs.forEach(function (eachInputs) {
    });
  _form.addEventListener("submit")
 e.preventDefault();
+// Js on form
 

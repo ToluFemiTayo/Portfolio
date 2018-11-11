@@ -93,6 +93,41 @@ background-color: rgb(153, 158, 158);
   background-color: rgb(184, 190, 190);
 }
 
+/* form validation */
+input:is__invalid {
+  /* box-shadow: 0 0 5px 1px red; */
+  border-color: #900;
+  background-color: #FDD;
+}
+
+input:focus:is__invalid {
+  outline: none;
+}
+
+
+/* This is the style of our error messages */
+.error {
+  width  : 100%;
+  padding: 0;
+ 
+  font-size: 80%;
+  color: white;
+  background-color: #900;
+  border-radius: 0 0 5px 5px;
+ 
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.error.active {
+  padding: 0.3em;
+}
+
+
+
+/* form validation */
+
+
 /* link styles */
 .text__link {
   text-decoration: none;
@@ -129,7 +164,6 @@ a:hover{
 .sticky + main + footer {
   padding: 60px 0 0;
 }
-
 .nav1__list {
   color: #000000;
   font-weight: bold;
@@ -176,7 +210,8 @@ a:hover{
 .nav__logo {
   width: 300px;
   height: 60px;
-  text-align: center;
+  text-align: 
+  center;
   padding: 30px 60px;
 }
 .nav__header {
@@ -558,27 +593,6 @@ a:hover{
   }
   
 }
-
-@media (min-width: 748px) {
-  .card, .row {
-    display: flex;
-    justify-content: space-between;
-  }
-  .column {
-    width: 350px;
-    padding: 60px;
-  }
-  .input__size, .textarea {
-    width: 300px;
-  }
-  .note {
-    width: 200px;
-  }
-} 
-
-
-
-
 @media (max-width: 576px) {
   body {
     width: 100%;
@@ -647,9 +661,7 @@ a:hover{
     min-width: 335px;
   }
   .card__title {
-    /* text-align: center; */
     padding: 20px 0 0;
-    /* margin: 0 auto; */
   }
   .row {
     display: block;
@@ -665,9 +677,6 @@ a:hover{
   section .text {
     width: 100%;
   }
-  /* .contact__form {
-    width: 100% !important;
-  } */
   .form__length {
     width: 180px;
   } 
@@ -975,8 +984,7 @@ a:hover{
   }
   .card__content {
     padding: 0 20px;
-  }
-   
+  }  
 }
 @media (max-width: 432px) {
   body {
@@ -1208,50 +1216,3 @@ a:hover{
     text-align: center;
   }
 }
-
-
-
-/* 
-@media (max-width: 350px) {
-  body {
-    width: 100%;
-    height: 100%;
-    font-size: 10px;
-  }
-  .header, .card__wrapper {
-    text-align: center;
-  }
-  .nav1__list, .nav1__right, .nav1__left {
-    width: 300px;
-  }
-  .nav1__link, .nav__menulink, .nav__list2 {
-    text-align: center !important;
-    padding: 10px 5px !important;
-  }
-  .nav__logo {
-    width: 100px;
-    height: 50px;
-    text-align: center;
-    padding: 20px 30px;
-  }
-  .nav__header {
-    height: 50px;
-  }
-  .welcome__text1, .welcome__text2, .btn {
-    font-size: 10px;
-  }
-  .card__wrapper, .myprojects {
-    padding: 0;
-  }
-  .card {
-    width: 175px;
-    height: 167px;
-  }
-  .card__content {
-    padding: 0 20px;
-  }
-   
-}  */
-
-
-
