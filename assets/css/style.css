@@ -346,13 +346,13 @@ a:hover{
   color: #e41122;
 }
 input.name {
-  width: 100%;
+  /* width: 100%; */
 }
 input.mail {
-  width: 100%;
+  /* width: 100%; */
 }
 textarea.message {
-  width: 100%;
+  /* width: 100%; */
 }
 input.is__invalid {
   border-color: #e41122;
@@ -948,17 +948,12 @@ input:focus.is__invalid {
 } */
 @media (max-width: 432px) {
   body {
-    width: 100%;
-    height: 100%;
     font-size: 10px;
     margin: 0;
   }
   .header, .card__wrapper {
     text-align: center;
   }
-  /* .header ul {
-    width: 100% !important;
-  } */
   .nav1__list, .nav1__right, .nav1__left {
     max-width: 300px;
     /* text-align: center; */
@@ -1083,10 +1078,8 @@ input:focus.is__invalid {
     text-align: center;
   }
 }
-@media (max-width: 335px), (max-width: 384px) {
+@media (max-width: 384px) {
   body {
-    width: 100%;
-    /* height: 100%; */
     font-size: 10px;
     margin: 0;
   }
@@ -1175,6 +1168,106 @@ input:focus.is__invalid {
     height: 60px !important;
   }
   
+  .sidebar {
+    width: 230px;
+  }
+  .card__aside {
+    width: 195px;
+    height: 240px;
+  }
+  .card__asidecontent {
+    width: 175px;
+    height: 240px;
+    padding: 0 10px;
+    margin: 0;
+  }
+  .copyright {
+    text-align: center;
+  }
+}
+@media (max-width: 335px) {
+  body {
+    font-size: 10px;
+    margin: 0;
+  }
+  .header, .card__wrapper {
+    text-align: center;
+    padding: 0;
+  }
+  .nav1__list, .nav1__right, .nav1__left {
+    width: 250px;
+    padding: 0;
+    margin: 0;
+  }
+  .nav1__link, .nav__menulink, .nav__list2 {
+    text-align: center;
+    padding: 10px 5px;
+  }
+  .nav__logo {
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    padding: 20px 30px;
+  }
+  .logo {
+    padding: 20px;
+  }
+  .nav__header {
+    height: 50px;
+  }
+  .welcome__text1, .welcome__text2, .card__content, .btn, .plhder, .button, .txt, .nte, .check__box {
+    font-size: 12px !important;
+    text-align: justify !important;
+  }
+  .skill__wrapper {
+    padding: 0 0 60px;
+  }
+  .skill__figure {
+    padding: 60px 0 30px;
+  }
+  .hire__txt {
+    text-align: left;
+    font-size: 15px !important;
+  }
+  .card__wrapper, .myprojects, .about__text, .page__wrapper, .wrap {
+    padding: 0 !important;
+  }
+  .column {
+    padding: 30px 10px !important;
+  }
+  .card, .contact__form {
+    min-width: 130px;
+    height: 230px;
+  }
+  .card__content {
+    padding: 0 20px;
+  }
+  .input__size {
+    width: 100px;
+    height: 12px;
+  }
+  .textarea {
+    width: 100px;
+  }
+  .page__heading {
+    width: 140px;
+    font-size: 15px;
+    padding: 30px;
+    margin: 0;
+  }
+  .card__title {
+    padding: 10px 0 0;
+  }
+  .card__content {
+    padding: 0 10px;
+  }
+  .form__length {
+    width: 100px;
+    height: 5px;
+  }
+  .txtarea {
+    height: 60px !important;
+  }
   .sidebar {
     width: 230px;
   }

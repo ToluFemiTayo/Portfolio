@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>submit demo</title>
+  <style>
+  p {
+    margin: 0;
+    color: blue;
+  }
+  div,p {
+    margin-left: 10px;
+  }
+  small {
+    display: block;
+    color: red;
+  }
+  </style>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+ 
+<p>Type 'correct' to validate.</p>
+<form action="javascript:alert( 'success!' );">
+  <div>
+    <input type="text">
+    <div>
+      <label>Name:</label>
+      <br>
+      <input type="text" name="name" placeholder="Enter your full name">
+      <small class="form__text d__none">Your name is less than ten characters.</small>
+      <p></p>
+    </div>
+    <div>
+      <label>Email address:</label>
+      <br>
+      <input type="email" name="email" placeholder="name@example.com">
+      <small class="form__text d__none">Your email is not correct.</small>
+      <p></p>
+    </div>
+    <div>
+      <label>Message:</label>
+      <br>
+      <textarea name="message" rows="3" placeholder="Type your message here"></textarea>
+      <small class="form__text d__none">Your message should be 20 - 100 characters.</small>
+      <p></p>
+    </div>
+    <div>
+    <input type="text">
+    <input type="submit">
+  </div>
+</form>
+<span></span>
+ 
+<script>
+  //  var value = e.target.value;
+$( "form" ).submit(function( event ) {
+  if ( $( "input:first" ).val() === "correct" ) {
+    $( "small" ).text( "Validated..." ).show();
+    return;
+  }
+ 
+  $( "small" ).text( "Your message should be 20 - 100 characters." ).show();
+  event.preventDefault();
+});
+</script>
+ 
+</body>
+</html>
