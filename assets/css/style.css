@@ -77,6 +77,9 @@ background-color: rgb(153, 158, 158);
   width: 60px;
   padding: 20px 0;
 }
+.sidebar__text {
+  font-size: 20px;
+}
 .learn__more {
   padding: 20px 0;
 }
@@ -92,7 +95,6 @@ background-color: rgb(153, 158, 158);
   color: rgb(202, 122, 31);
   background-color: rgb(184, 190, 190);
 }
-
 /* link styles */
 .text__link {
   text-decoration: none;
@@ -179,7 +181,7 @@ a:hover{
   padding: 30px 60px;
 }
 .nav__header {
-  height: 60px;
+  height: 80px;
   border-radius: 10%;
   background-color: #492828;
   text-align: center;
@@ -677,7 +679,7 @@ input:focus.is__invalid {
   .nav__header {
     height: 50px;
   }
-  .welcome__text1, .welcome__text2, .card__content, .btn, .plhder, .button, .txt, .nte, .check__box {
+  .welcome__text1, .welcome__text2, .sidebar__text, .card__content, .btn, .plhder, .button, .txt, .nte, .check__box {
     font-size: 12px !important;
     text-align: justify !important;
   }
@@ -801,7 +803,7 @@ input:focus.is__invalid {
   .nav__header {
     height: 50px;
   }
-  .welcome__text1, .welcome__text2, .card__content, .btn, .plhder, .button, .txt, .nte, .check__box {
+  .welcome__text1, .welcome__text2, .sidebar__text, .card__content, .btn, .plhder, .button, .txt, .nte, .check__box {
     font-size: 12px !important;
     text-align: justify !important;
   }
@@ -976,6 +978,10 @@ input:focus.is__invalid {
     font-size: 12px !important;
     text-align: justify !important;
   }
+  .sidebar__text {
+    font-size: 12px !important;
+    text-align: left !important;
+  }
   .skill__wrapper {
     padding: 0 0 60px;
   }
@@ -1103,7 +1109,7 @@ input:focus.is__invalid {
   .nav__header {
     height: 50px;
   }
-  .welcome__text1, .welcome__text2, .card__content, .btn, .plhder, .button, .txt, .nte, .check__box {
+  .welcome__text1, .welcome__text2, .sidebar__text, .card__content, .btn, .plhder, .button, .txt, .nte, .check__box {
     font-size: 12px !important;
     text-align: justify !important;
   }
@@ -1214,7 +1220,7 @@ input:focus.is__invalid {
   .nav__header {
     height: 50px;
   }
-  .welcome__text1, .welcome__text2, .card__content, .btn, .plhder, .button, .txt, .nte, .check__box {
+  .welcome__text1, .welcome__text2, .sidebar__text, .card__content, .btn, .plhder, .button, .txt, .nte, .check__box {
     font-size: 12px !important;
     text-align: justify !important;
   }
